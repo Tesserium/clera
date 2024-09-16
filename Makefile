@@ -1,5 +1,5 @@
 CXX=g++
-CXXFLAGS=-Wall -Wextra -Iinclude -std=c++17
+CXXFLAGS=-Wall -Wextra -std=c++17
 LD=ld
 LDFLAGS=-lncursesw -lncursesw_g -lncurses -lncurses_g
 PROJNAME=clera
