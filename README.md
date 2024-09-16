@@ -4,6 +4,6 @@ Blows up your terminal if you mistype `clear`, but C++ version plus automatic ad
 ## Installing
 For most linux distros, use the following command:
 ```
-curl https://github.com/code2828/clera_cpp/install.sh | sh
+curl https://raw.githubusercontent.com/Tesserium/clera/master/install.sh | sh
 ```
 The script installs an executable `clera` to `/usr/local/bin` by default. You can edit the script to make it install to somewhere else.
