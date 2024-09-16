@@ -1,4 +1,3 @@
-#include<ncurses/curses.h>
 #include<curses.h>
 #include<cursesw.h>
 #include<iostream>
