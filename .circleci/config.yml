@@ -23,16 +23,16 @@ jobs:
       - run: make rel
       - store_artifacts:
           path: clera
-  macos:
-    docker:
-      - image: dockurr/macos:latest
-    steps:
-      - checkout
-      - run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      - run: brew install make ncurses gcc
-      - run: make rel
-      - store_artifacts:
-          path: clera
+  #macos:
+  #  docker:
+  #   - image: dockurr/macos:latest
+  # steps:
+  #   - checkout
+  #   - run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  #   - run: brew install make ncurses gcc
+  #   - run: make rel
+  #   - store_artifacts:
+  #       path: clera
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
@@ -41,6 +41,6 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - linux
-  macos-workflow:
-    jobs:
-      - macos
+  #macos-workflow:
+  #  jobs:
+  #   - macos
