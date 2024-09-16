@@ -18,9 +18,9 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
-      - run: curl -O "https://ftp.gnu.org/gnu/ncurses/ncurses-6.5.tar.gz" && tar xf *.tar.gz
-      - run: cd ncurses-6.5 && ./configure --prefix=/home/circleci/project && make && make install
-      - run: nm ./lib/*.a
+      - run: sudo apt install -y ncursesw
+      #- run: curl -O "https://ftp.gnu.org/gnu/ncurses/ncurses-6.5.tar.gz" && tar xf *.tar.gz
+      #- run: cd ncurses-6.5 && ./configure --prefix=/home/circleci/project && make && make install
       - run: g++ -Wall -Wextra -Iinclude -std=c++17 -lncursesw -Llib -O3 clera.cpp -o clera
       - store_artifacts:
           path: clera
