@@ -1,4 +1,4 @@
-#include<cursesw.h>
+#include<curses.h>
 #include<iostream>
 #include<chrono>
 #include<cstdlib>
