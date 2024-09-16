@@ -258,7 +258,6 @@ int clera()
     initscr();
     if(!TINY)
     {
-	endwin();
 	cout << "How did you get such a tiny terminal window??" << endl;
 	return 0;
     }
@@ -281,13 +280,14 @@ int clera()
 	    return 0; // people nowadays are busy & they probably don't have the time to watch the whole animation.
 	}
     }
-    endwin();
     return 0;
 }
 
 int main(int argc, const char** argv)
 {
+    system("clear");
     int ret = clera();
+    endwin();
     system("clear");
 
     return ret;
