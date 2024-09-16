@@ -22,7 +22,7 @@ jobs:
       - run: sudo apt install -y libncurses-dev
       #- run: curl -O "https://ftp.gnu.org/gnu/ncurses/ncurses-6.5.tar.gz" && tar xf *.tar.gz
       #- run: cd ncurses-6.5 && ./configure --prefix=/home/circleci/project && make && make install
-      - run: g++ -Wall -Wextra -Iinclude -std=c++17 -lncursesw -O3 clera.cpp -o clera
+      - run: g++ -Wall -Wextra -Iinclude -std=c++17 -lncurses -lncursesw -O3 clera.cpp -o clera
       - store_artifacts:
           path: clera
 
