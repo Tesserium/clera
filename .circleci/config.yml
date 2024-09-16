@@ -19,7 +19,7 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       - run: curl -O "https://ftp.gnu.org/gnu/ncurses/ncurses-6.5.tar.gz" && tar xf *.tar.gz
-      - run: cd ncurses-6.5 && ./configure --prefix=.. && make && make install
+      - run: cd ncurses-6.5 && ./configure --prefix=~/project && make && make install
       - run: make rel
       - store_artifacts:
           path: clera
