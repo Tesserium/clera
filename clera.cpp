@@ -1,4 +1,3 @@
-#include<curses.h>
 #include<cursesw.h>
 #include<iostream>
 #include<chrono>
