@@ -21,7 +21,7 @@ jobs:
       - run: curl -O "https://ftp.gnu.org/gnu/ncurses/ncurses-6.5.tar.gz" && tar xf *.tar.gz
       - run: cd ncurses-6.5 && ./configure && make && make install
       - run: make
-      - store_artifacts
+      - store_artifacts:
           path: clera
 
 # Orchestrate jobs using workflows
