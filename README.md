@@ -1,0 +1,8 @@
+# clera
+Blows up your terminal if you mistype `clear`, but C++ version plus automatic adjustment according to the terminal size, also with more frames. Credit goes to [this repo](https://github.com/kz6fittycent/clera/tree/master)
+
+## Installing
+```
+curl https://github.com/code2828/clera_cpp/install.sh | sh
+```
+The script installs an executable `clera` to `/usr/local/bin` by default. You can edit the script to make it install to somewhere else.
