@@ -20,9 +20,10 @@ jobs:
       - checkout
       - run: curl -O "https://ftp.gnu.org/gnu/ncurses/ncurses-6.5.tar.gz" && tar xf *.tar.gz
       - run: cd ncurses-6.5 && ./configure --prefix=/home/circleci/project && make && make install
-      - run: make rel
-      - store_artifacts:
-          path: clera
+      - run: nm ./lib/*.a
+      #- run: make rel
+      #- store_artifacts:
+          #path: clera
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
