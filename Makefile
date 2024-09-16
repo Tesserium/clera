@@ -1,7 +1,7 @@
 CXX=g++
 CXXFLAGS=-Wall -Wextra -Iinclude -std=c++17
 LD=ld
-LDFLAGS=-lc -lc++ -lstdc++ -lm -lncursesw -lncursesw_g -lncurses++w -lncurses++w_g -Llib
+LDFLAGS=-lncursesw -lncursesw_g -Llib
 PROJNAME=clera
 INSTALLDIR=/usr/local/bin
 
