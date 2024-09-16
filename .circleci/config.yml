@@ -28,6 +28,8 @@ jobs:
       - image: dockurr/macos:latest
     steps:
       - checkout
+      - run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      - run: brew install make ncurses gcc
       - run: make rel
       - store_artifacts:
           path: clera
